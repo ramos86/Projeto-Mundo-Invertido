@@ -56,7 +56,7 @@
 h1,
 h2,
 h3 {
-    font-family: var(--featured-font-family);
+    font-family: Copperplate, Papyrus, fantasy;
     font-size: 3rem;
     color: var(--primary-color);
     text-transform: uppercase;
@@ -71,18 +71,18 @@ p,
 input,
 textarea,
 label {
-    font-family: "libre-baskerville", serif;
+    font-family: Copperplate, Papyrus, fantasy;
 }
 
 button {
     padding: 16px 32px;
     background-color: transparent;
     font-weight: 900;
-    font-family: var(--featured-font-family);
+    font-family: Copperplate, Papyrus, fantasy;
     font-size: 1,25rem;
     text-transform: uppercase;
     cursor: pointer;
-    transition: background 1s;
+    transition: background 2s;
 }
 
 /*** HEADERSTYLES ***/
@@ -122,6 +122,7 @@ header::before  {
 
 .header-content p {
     margin: 30px 0 50px;
+    font-family: Copperplate, Papyrus, fantasy;
 }
 
 .header-content button {
@@ -191,21 +192,32 @@ section {
 
 #section-inverted-world .section-texts h1 {
     max-width: 300px;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-style: oblique;
+}
+#section-inverted-world .section-texts p{
+    font-family: Copperplate, Papyrus, fantasy;
 }
 
 /*** SECTION #2 STRANGER THINGS TRAILER ***/
 
- 
 #section-stranger-things-trailer .section-texts{
     width: 50%;
     text-align: right;
 }
 
-#section-stranger-things-trailer .section-texts h2{
+#section-stranger-things-trailer .section-texts h1{
     max-width: 425px;
     display: inline-block;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-style: oblique;
 }
-#section-stranger-things-trailer .video-frase {
+
+#section-stranger-things-trailer .section-texts p{
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+#section-stranger-things-trailer .video-frame {
     background-color: var(--primary-color);
 }
 
@@ -223,17 +235,22 @@ section {
 
 /*** SECTION 03 STRANGER THINGS GALLERY ***/
 
-#section-stranger-things-gallery .container {
+#section-stranger-things-gallery .container-section-texts {
     width: 100%;
+    justify-content: center;
+    background: var(--background-lamp-image) 120% / 50% no-repeat;
 } 
 
 #section-stranger-things-gallery .container-section-text h2 {
     width: 800px;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-style: oblique;
 }
 
 #section-stranger-things-gallery .gallery-container {
     display: flex;
     gap: 50px;
+    padding-left: 20px;
 }
 
 #section-stranger-things-gallery .gallery-image {
@@ -250,4 +267,21 @@ section {
     object-fit: cover;
     border: 10px solid var(--highlight-color);
 }
+
+
+/*** SECTION 04 Dungeons AND Dragons ***/
+
+#section-form {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+}
+
+#section-form h2 {
+    width: 600px;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-style: oblique;
+}
+
 
